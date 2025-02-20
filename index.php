@@ -1,7 +1,7 @@
 <?php
 include 'includes/database.php';
-include 'includes/queries.php'
-include 'includes/login.php'
+include 'includes/queries.php';
+include 'includes/login.php';
 ?>
 
 <!DOCTYPE html>
