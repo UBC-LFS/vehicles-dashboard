@@ -1,6 +1,6 @@
 <?php
-include 'include/database.php';
-include 'include/queries.php'
+include 'includes/database.php';
+include 'includes/queries.php'
 ?>
 
 <!DOCTYPE html>
