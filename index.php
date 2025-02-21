@@ -82,7 +82,7 @@ foreach($query as $k => $v) {
       <td><?php echo $row['room_name']; ?></td>
       <td><?php echo $row['name']; ?></td>
       <td><?php echo $row['user_email']; ?></td>
-      <td><?php echo $row['area_id']; ?></td>
+      <td><?php echo $row['id']; ?></td>
       </tr>
   
 <?php
