@@ -19,7 +19,7 @@ include 'includes/login.php';
 <body>
 
 <?php
-if (!is_admin()) {
+if (!(is_admin())) {
   print("<h1>Admin users only</h1>");
   exit();
 }
