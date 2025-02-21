@@ -68,6 +68,7 @@ foreach($query as $k => $v) {
     <th scope='col'>Item</th>
     <th scope='col'>Notes</th>
     <th scope='col'>Email</th>
+    <th scope='col'>Picked Up</th>
     </tr>
     </thead>
     <tbody>
@@ -82,7 +83,9 @@ foreach($query as $k => $v) {
       <td><?php echo $row['room_name']; ?></td>
       <td><?php echo $row['name']; ?></td>
       <td><?php echo $row['user_email']; ?></td>
-      <td><?php echo $row['id']; ?></td>
+      <td><input type="checkbox" id="<?php echo $row['id']; ?>"
+           name="<?php echo $row['id']; ?>" />
+      </td>
       </tr>
   
 <?php
