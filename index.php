@@ -18,6 +18,13 @@ include 'includes/login.php';
   </head>
 <body>
 
+<?php
+if (!is_admin()) {
+  print("<h1>Admin users only</h1>");
+  exit();
+}
+?>
+
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
         <a class="navbar-brand" href="#">
