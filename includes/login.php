@@ -9,8 +9,8 @@ $as->requireAuth();
 
 $attributes = $as->getAttributes();
 
-function is_admin() {
-    if (in_array($attributes['urn:mace:dir:attribute-def:cwlLoginName'][0], $auth['saml']['admin']['urn:mace:dir:attribute-def:cwlLoginName'])) {
+function is_admin($admin) {
+    if (in_array($attributes['urn:mace:dir:attribute-def:cwlLoginName'][0], $admin)) {
         return true;
     } else {
         return false;

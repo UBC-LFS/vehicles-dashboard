@@ -19,7 +19,7 @@ include 'includes/login.php';
 <body>
 
 <?php
-if (!(is_admin())) {
+if (!is_admin($auth['saml']['admin']['urn:mace:dir:attribute-def:cwlLoginName'])) {
   print("<h1>Admin users only</h1>");
   exit();
 }
