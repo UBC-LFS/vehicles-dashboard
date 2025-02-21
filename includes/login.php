@@ -10,7 +10,7 @@ $as->requireAuth();
 $attributes = $as->getAttributes();
 
 function is_admin($user, $admin) {
-    if (in_array($user $admin)) {
+    if (in_array($user, $admin)) {
         return true;
     } else {
         return false;
